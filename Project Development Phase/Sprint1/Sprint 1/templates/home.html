@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Home</title>
+    <style>
+      .container
+      {
+          padding: 20px;
+          border: 2px 5px 5px 5px;
+          border-color: #ffffff;
+          border-width: 5px;
+          border-style: solid;
+          text-align: center;
+          border-radius: 15px;
+          box-shadow: 1px 1px  10px 5px rgba(234, 234, 234, 0.844);
+          margin-bottom: 10px;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 15px;
+          background-color: #ffffff;
+          transition: transform 1.0s ease;
+          width: fit-content;
+      }
+      .container:hover
+  {
+      transform: scale(1.05);
+  }
+      </style>
+{% endblock %}
+
+{% block body %} 
+
+
+
+<section class="catogories" >
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 p-1" >
+              <img src="static/img/Spreadsheets-pana.png" class="img-fluid" style="width: 500px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 p-1">
+            <div class="container register-form" style="margin-top: 80px;">
+              <div class="d-flex align-items-center mb-3 pb-1" >
+                <span class="h1 fw-bold mb-0" style="color: rgb(9, 90, 167);">Welcome to Inventory Management System</span>
+             
+              </div>
+              By our inventory Management System, You can track your goods throughout your entire supply chain.
+            </div>
+            <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <a href="/register">
+                <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="button" class="btn btn-primary btn-lg img-fluid" style="border-radius: 50px;">Register</button></div></a>
+            </div>
+            <!--End Icon Box -->
+  
+            <div class="col-lg-6 col-md-6" data-aos="fade-up">
+               <a href="/login">
+                <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button type="button" class="btn btn-primary btn-lg img-fluid" style="border-radius: 50px;">Login</button></div></a>
+            </div>
+          </div>
+            <!--End Icon Box -->
+           
+           
+          </div>
+      </div>
+  </div>
+</section>
+<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"><span class="h1 fw-bold mb-0 img-fluid" style="color: rgb(9, 90, 167); text-align: center;">Services used</span></div>
+<div class="home-content">
+  <div class="overview-boxes">
+        <section class="catogories" >
+              <div class="container-fluid">
+
+                <div class="row">
+                
+                  <div class="col-lg-6">
+                    <div class="row">
+                     
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="#" style="text-decoration: none; color: black">
+                            <div class="box-topic">ChatBot Service
+                            </div></a>
+                            <a href="#" style="text-decoration: none; color: black">
+                              <img src="static/img/IBM-Watson-Logo-PNG@zeevector.png" class="img-fluid" style="margin-top: 105px; margin-bottom: 105px;">
+                            </a>
+                          </div>
+                        </div>  
+                        
+                      </div>
+                      
+
+                      
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="#" style="text-decoration: none; color: black">
+                            <div class="box-topic">Database Service
+                            </div></a>
+                            <a href="#" style="text-decoration: none; color: black">
+                              <img src="static/img/pngegg (1).png" class="img-fluid" >
+                            </a>
+                          </div>
+                        </div>
+                      </div>  
+               
+                     
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="row">
+                      
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container" style="height: fit-content; width: fit-content;">
+                            <a href="#" style="text-decoration: none; color: black">
+                            <div class="box-topic">Object Storage Service
+                            </div></a>
+                            <a href="#" style="text-decoration: none; color: black">
+                              <img src="static/img/ibm-cloud-storage-1-logoAsset-6-400x119.png" class="img-fluid" style="margin-top: 105px; margin-bottom: 105px;" >
+                              </a>
+                          </div>
+                        </div>  
+                      </div>
+                    
+
+                     
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="#" style="text-decoration: none; color: black">
+                            <div class="box-topic">Kubernetes Service
+                            </div></a>
+                            <a href="#" style="text-decoration: none; color: black">
+                              <img src="static/img/1_JnfXYMABdf1j-SwjZDlOfw.png" class="img-fluid" style="margin-top: 77px; margin-bottom: 77px;">
+                              </a>
+                          </div>
+                        </div>
+                      </div>  
+                      
+                     
+
+                    </div>
+
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../../assets/js/vendor/holder.min.js"></script>
+ 
+
+{% endblock %}
