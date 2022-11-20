@@ -1,0 +1,134 @@
+{% extends 'dashboard/base.html' %}
+{% block head %}
+    <title>Dashboard</title>
+    <style>
+    .container
+    {
+        padding: 20px;
+        border: 2px 5px 5px 5px;
+        border-color: #ffffff;
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 1px 1px  10px 5px rgba(234, 234, 234, 0.844);
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 15px;
+        background-color: #ffffff;
+        transition: transform 1.0s ease;
+        width: fit-content;
+    }
+    .container:hover
+{
+    transform: scale(1.05);
+}
+    </style>
+{% endblock %}
+
+{% block body %} 
+
+<div class="home-content">
+  <div class="overview-boxes">
+        <section class="catogories" >
+              <div class="container-fluid">
+
+                <div class="row">
+                
+                  <div class="col-lg-6">
+                    <div class="row">
+                     
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="/productlist" style="text-decoration: none; color: black">
+                            <div class="box-topic">Products List
+                            </div></a>
+                            <a href="/productlist" style="text-decoration: none; color: black">
+                              <img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/productlist.png" class="img-fluid" width="350px">
+                            </a>
+                          </div>
+                        </div>  
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="/stockupdate" style="text-decoration: none; color: black">
+                            <div class="box-topic">Stock Update
+                            </div></a>
+                            <a href="/stockupdate" style="text-decoration: none; color: black">
+                              <img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/stockupdate.png" class="img-fluid" width="350px">
+                            </a>
+                          </div>
+                        </div>  
+                      </div>
+                      
+
+                      
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="/addproduct" style="text-decoration: none; color: black">
+                            <div class="box-topic">Add Products
+                            </div></a>
+                            <a href="/addproduct" style="text-decoration: none; color: black">
+                              <img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/addproduct.png" class="img-fluid" width="350px">
+                            </a>
+                          </div>
+                        </div>
+                      </div>  
+               
+                     
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="row">
+                      
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="/movement" style="text-decoration: none; color: black">
+                            <div class="box-topic">Products Movement
+                            </div></a>
+                            <a href="/movement" style="text-decoration: none; color: black"><img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/movement.png" class="img-fluid" width="350px">
+                              </a>
+                          </div>
+                        </div>  
+                      </div>
+                    
+
+                     
+                      <div class="col-lg-6 col-md-6 col-12 p-1">
+                        <div class="catagories_item">
+                          <div class="container">
+                            <a href="/report" style="text-decoration: none; color: black">
+                            <div class="box-topic">Product Report
+                            </div></a>
+                            <a href="/report" style="text-decoration: none; color: black">
+                              <img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/report.png" class="img-fluid" width="350px">
+                              </a>
+                          </div>
+                        </div>
+                      </div>  
+                      
+                     
+
+                    </div>
+
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+{{msg}}
+ 
+  {% endblock %}
+
