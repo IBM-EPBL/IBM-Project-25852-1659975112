@@ -1,0 +1,79 @@
+{% extends 'dashboard/base.html' %}
+{% block head %}
+    <title>Contact Support</title>
+
+{% endblock %}
+
+{% block body %} 
+		
+<div class="home-content">
+	<div class="overview-boxes">
+		<section class="catogories" >
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-12 p-1">
+						
+								
+					 
+								  
+								  <img src="https://imsbucket.s3.jp-tok.cloud-object-storage.appdomain.cloud/customersupport.png" class="img-fluid" style="width: 500px; display: block; margin-left: auto; margin-right: auto;">
+						
+						
+							
+							
+		
+						</div>
+					
+					<div class="col-lg-6 col-md-6 col-12 p-1" style="margin-top: 40px;">
+					  <div class="container register-form">
+					   
+						<div class="form">
+						  <div class="d-flex align-items-center mb-3 pb-1">
+						  
+							<span class="h1 fw-bold mb-0">Contact Support</span>
+						  </div>
+			
+							<div class="form-content">
+							  <form class="mx-1 mx-md-4" action = "{{ url_for('contactsup') }}" method = "POST">
+								<div class="row">
+									
+										<div class="flex-row align-items-center mb-4">
+											<label for="exampleFormControlInput1">Enter Name</label>
+										  <input type="text" name="name" value="" placeholder="Name" class="form-control" />
+										</div>
+									   
+										<div class="flex-row align-items-center mb-4">
+											<label for="exampleFormControlInput1">Mobile Number</label>
+										  <input type="text" name="mobileno" value="" placeholder="Mobile Number" class="form-control" />
+										</div>
+									   
+										<div class="flex-row align-items-center mb-4">
+											<label for="exampleFormControlInput1">Email address</label>
+										  <input type="email" name="emailid" value="" placeholder="Email ID" class="form-control" />
+										</div>
+										
+										<div class="flex-row align-items-center mb-4">
+											<label for="exampleFormControlTextarea1">Query</label>
+											<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="query" placeholder="Enter your query here.."></textarea>
+										</div>
+								
+								</div>
+								{{msg}}
+								<div class="text-center text-lg-start mt-4 pt-2">
+								  <input type="submit" class="btn btn-primary btn-lg" style="width: 125px; display: block; margin-left: auto; margin-right: auto;">
+								
+								 
+								</div>
+								</form>
+							 
+							</div>
+						</div>
+					</div>
+					  
+			</div>
+		</section> 
+	</div>
+	</div>
+	
+
+	{% endblock %}
